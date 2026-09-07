@@ -1,0 +1,66 @@
+for new model continuous gain
+Q = np.diag([300, 30,  900, 20])
+R = np.array([[0.001]])
+k conti: [[ -547.72255751  -537.21622674 -2323.78340148  -606.36541314]]
+
+self.add_noise = True
+self.noise_level = 1
+self.noise_cart_pos = 0.3
+self.noise_cart_vel = 0.3
+self.noise_pole_pos = 0.3
+self.noise_pole_vel = 0.3
+
+self.st_noise_cart_pos = 0.1
+self.st_noise_cart_vel = 0.1
+self.st_noise_pole_pos = 0.0
+self.st_noise_pole_vel = 0.3
+
+m_p = 0.2      # Pendulum (rod) mass [kg] 
+m_w = 0.0       # Point mass at end [kg]
+M   = 0.694     # Cart mass [kg]
+l   = 0.65      # Total pendulum length [m] (pivot to tip)
+g   = 9.8065    # Gravity [m/s^2]
+
+
+for new model discretization using ZOH
+Q = np.diag([800, 50,  1200, 40])
+R = np.array([[0.0001]])
+k disc: [[ -399.57987841  -359.26255712 -1470.12910133  -395.48000068]]
+
+self.add_noise = True
+self.noise_level = 1 # scales other values
+self.noise_cart_pos = 0.3
+self.noise_cart_vel = 0.3
+self.noise_pole_pos = 0.3
+self.noise_pole_vel = 0.3
+
+self.st_noise_cart_pos = 0.1
+self.st_noise_cart_vel = 0.1
+self.st_noise_pole_pos = 0.0
+self.st_noise_pole_vel = 0.3
+
+m_p = 0.2      # Pendulum (rod) mass [kg] 
+m_w = 0.0       # Point mass at end [kg]
+M   = 0.694     # Cart mass [kg]
+l   = 0.65      # Total pendulum length [m] (pivot to tip)
+g   = 9.8065    # Gravity [m/s^2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

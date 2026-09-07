@@ -1,0 +1,107 @@
+# Your encoder sampling rate
+sampling_rate = 500  # Hz
+dt = 1.0 / sampling_rate
+
+# Low-delay settings (≤6 ms delay)
+window_length = 21  # Odd, minimal delay (~6 ms)
+
+# Savitzky-Golay coefficients for angular velocity (1st derivative)
+coeffs = savgol_coeffs(window_length, polyorder=3 , deriv=1, delta=dt, use='conv')
+
+sg_coeffs(torch::tensor({
+                -11.5675387f, -1.38026225f, 5.95527026f, 10.7559192f,
+                13.3385451f, 14.0200083f, 13.1171693f, 10.9468885f,
+                7.82602642f, 4.07144343f, 0.0f, -4.07144343f,
+                -7.82602642f, -10.9468885f, -13.1171693f, -14.0200083f,
+                -13.3385451f, -10.7559192f, -5.95527026f, 1.38026225f,
+                11.5675387f
+            }, torch::kFloat32)),
+            
+##############################
+
+# Your encoder sampling rate
+sampling_rate = 500  # Hz
+dt = 1.0 / sampling_rate
+
+# Low-delay settings (≤6 ms delay)
+window_length = 11  # Odd, minimal delay (~6 ms)
+
+# Savitzky-Golay coefficients for angular velocity (1st derivative)
+coeffs = savgol_coeffs(window_length, polyorder=3 , deriv=1, delta=dt, use='conv')
+print("Savitzky-Golay coefficients", coeffs)
+print("used Savitzky-Golay coefficients", coeffs[::-1])
+
+sg_coeffs(torch::tensor({
+    -29.1375291f, 28.5547786f, 51.6705517f, 48.8539239f,
+     28.7490287f, 0.0f, -28.7490287f, -48.8539239f,
+    -51.6705517f, -28.5547786f, 29.1375291f
+}, torch::kFloat32));
+
+#############################
+
+# Your encoder sampling rate
+sampling_rate = 500  # Hz
+dt = 1.0 / sampling_rate
+
+# Low-delay settings (≤6 ms delay)
+window_length = 51  # Odd, minimal delay (~6 ms)
+
+# Savitzky-Golay coefficients for angular velocity (1st derivative)
+coeffs = savgol_coeffs(window_length, polyorder=3 , deriv=1, delta=dt, use='conv')
+print("Savitzky-Golay coefficients", coeffs)
+print("used Savitzky-Golay coefficients", coeffs[::-1])
+
+sg_coeffs(torch::tensor({
+    -2.46376033f, -1.64621350f, -0.916707058f, -0.271572640f,
+     0.292858099f,  0.780253509f,  1.19428194f,  1.53861174f,
+     1.81691125f,  2.03284883f,  2.19009283f,  2.29231159f,
+     2.34317347f,  2.34634681f,  2.30549996f,  2.22430127f,
+     2.10641909f,  1.95552177f,  1.77527765f,  1.56935510f,
+     1.34142245f,  1.09514805f,  0.834200261f,  0.562247422f,
+     0.282957886f,  0.0f,       -0.282957886f, -0.562247422f,
+    -0.834200261f, -1.09514805f, -1.34142245f, -1.56935510f,
+    -1.77527765f, -1.95552177f, -2.10641909f, -2.22430127f,
+    -2.30549996f, -2.34634681f, -2.34317347f, -2.29231159f,
+    -2.19009283f, -2.03284883f, -1.81691125f, -1.53861174f,
+    -1.19428194f, -0.780253509f, -0.292858099f, 0.271572640f,
+     0.916707058f, 1.64621350f, 2.46376033f
+}, torch::kFloat32));
+
+############################
+
+# Your encoder sampling rate
+sampling_rate = 500  # Hz
+dt = 1.0 / sampling_rate
+
+# Low-delay settings (≤6 ms delay)
+window_length = 27  # Odd, minimal delay (~6 ms)
+
+# Savitzky-Golay coefficients for angular velocity (1st derivative)
+coeffs = savgol_coeffs(window_length, polyorder=3 , deriv=1, delta=dt, use='conv')
+
+sg_coeffs(torch::tensor({
+                -7.63242717f, -2.58351695f,  1.39456116f,  4.39104318f,
+                6.49516512f,  7.79616297f,  8.38327275f,  8.34573047f,
+                7.77277214f,  6.75363377f,  5.37755135f,  3.73376092f,
+                1.91149846f, -0.00000000f, -1.91149846f, -3.73376092f,
+                -5.37755135f, -6.75363377f, -7.77277214f, -8.34573047f,
+                -8.38327275f, -7.79616297f, -6.49516512f, -4.39104318f,
+                -1.39456116f,  2.58351695f,  7.63242717f
+            }, torch::kFloat32)),
+            
+############################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

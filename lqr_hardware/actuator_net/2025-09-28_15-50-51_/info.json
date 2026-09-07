@@ -1,0 +1,51 @@
+{
+  "taps_steps": [
+    0,
+    10,
+    20
+  ],
+  "dt_sec": 0.0011,
+  "features": [
+    "e_t",
+    "v_t",
+    "e_t_10",
+    "v_t_10",
+    "e_t_20",
+    "v_t_20"
+  ],
+  "label": "joint_torque",
+  "normalization_mean": [
+    -0.022237906232476234,
+    -0.0003629605926107615,
+    -0.02240857295691967,
+    -0.00038925904664210975,
+    -0.02263837493956089,
+    -0.000407142419135198
+  ],
+  "normalization_std": [
+    2.8580358028411865,
+    0.29043641686439514,
+    2.8585991859436035,
+    0.29040655493736267,
+    2.859149217605591,
+    0.2903895974159241
+  ],
+  "activation": "softsign",
+  "hidden_layers": [
+    32,
+    32,
+    32
+  ],
+  "output_dim": 1,
+  "input_dim": 6,
+  "loss": "SmoothL1Loss(beta=1.0)",
+  "optimizer": "Adam(lr=3e-4)",
+  "noise_injected": {
+    "noise_std": 0.0,
+    "noise_frac": 0.05
+  },
+  "val_split": 0.1,
+  "batch_size": 1024,
+  "epochs": 200,
+  "seed": 42
+}

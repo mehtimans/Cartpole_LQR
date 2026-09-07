@@ -1,0 +1,8 @@
+package actuatorlcm;
+
+struct actuator_response_t {
+    int64_t id;
+    double position;
+    double velocity;
+    double current;
+}
