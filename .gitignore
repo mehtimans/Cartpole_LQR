@@ -1,8 +1,8 @@
-cartpole_LQR/lqr_hardware/serial/
-cartpole_LQR/lqr_hardware/libtorch/
-cartpole_LQR/lqr_hardware/build/
-cartpole_LQR/lqr_hardware/logs/
-cartpole_LQR/lqr_isaacgym/log/
+lqr_hardware/serial/
+lqr_hardware/libtorch/
+lqr_hardware/build/
+lqr_hardware/logs/
+lqr_isaacgym/log/
 
 *.vscode/
 __pycache__/
